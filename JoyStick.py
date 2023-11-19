@@ -1,9 +1,8 @@
-from colorsys import hsv_to_rgb
-import board
 from digitalio import DigitalInOut, Direction
-import adafruit_rgb_display.st7789 as st7789
+from adafruit_rgb_display import st7789
+import board
 
-class JoyStick:
+class Joystick:
     def __init__(self):
         self.cs_pin = DigitalInOut(board.CE0)
         self.dc_pin = DigitalInOut(board.D25)
